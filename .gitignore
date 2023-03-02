@@ -4,6 +4,7 @@
 ### AzureFunctions ###
 # Azure Functions localsettings file
 local.settings.json
+.funcignore
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -199,5 +200,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Other
+.vscode
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,python,azurefunctions

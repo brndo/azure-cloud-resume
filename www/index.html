@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Patrick Brander | Cloud R&eacutesum&eacute </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+	<script src="https://kit.fontawesome.com/5ab4ffb659.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="sidenav">
+	<img src ="./img/brndr.png">
+	<a href="#about-me">About Me</a>
+	<a href="#projects">Projects</a>
+	<a href="#exp">Experience</a>
+	<a href="#certs">Certifications</a>
+	<a href="#skills">Technical Skills</a>
+	<a href="#edu">Education</a>
+</div>
+	
+	<div class="header">
+		<h1>Patrick Brander</h1>
+		<span><a href="mailto:p.brander.resume@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+		<a href="https://www.linkedin.com/in/brndr/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+		<a href="https://github.com/brndo" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+		<p style = "font-size: large">Visitors: <span id="count"></span></p>
+	</div>
+
+	<script>
+		let file = "https://pbrander-visitor-counter-dev.azurewebsites.net/api/visitor-counter-dev?code=ewsAF1H3536C6imsjKAS1ZZLNLnmHo_ox8GTbhHE9IfBAzFu5mky-g=="
+		fetch (file)
+		.then(x => x.text())
+		.then(y => document.getElementById("count").innerHTML = y);
+	</script>
+
+	<div class="content"  id="about-me">
+		<h2>About Me</h2>
+		<p>I have been working in the IT field for over a decade with experience administering and securing Windows Servers, Layer 2/3 Networks, VMWare, PowerShell and SQL Server. </p><br>
+            Over the last few years, my interests have led me to start working more on cyber security and cloud projects.  My passion to learn doesn't end when I turn off my work computer and has led me to comntinue
+            delving into Linux, Python and most recently Terraform.
+		</p>
+	</div>
+
+	<div class="content"  id="projects">
+		<h2>Projects</h2>
+		<p style="position: relative;bottom: 10px;"><i>Source code these projects are available on my <a href="https://github.com/brndo">Github</a>.</i></p>
+
+		<h3>Serverless R&eacutesum&eacute Website</h3>
+		<h4><i>Original Project - </i><a href="https://cloudresumechallenge.dev/docs/the-challenge/azure/"> Forrest Brazeal, cloudresumechallenge.dev</a></h4>
+		<ul>
+			<li>Created a static website hosted in an Azure Blob storage container with a counter displaying number of visitors</li>
+			<li>Implemented Terraform to provision back end services consisting of DynamoDB table, a Python Lambda function, and an API Gateway</li>
+			<li>End-to-end testing through Cypress.io to ensure the API is functioning properly</li>
+			<li>CI/CD is done through Github Actions</li>
+		</ul>
+	</div>	
+
+	<div class ="content" id="exp">
+		<h2>Experience</h2>
+
+		<h3>System Support Manager<span style="font-weight: normal;"> | February 2017-2022</span></h3>
+		<h4><i>CDS Logistics</i> - Middle River, MD</h4>
+		<ul>
+			<li>Virtualized server infrastructure and reduced Disaster Recovery RTO (Recovery Time Objective) for critical business systems from days to hours</li>
+			<li>Researched and implemented a Next-Gen Antivirus (A/V) and Endpoint Detection Response (EDR) solution to deploy to endpoints</li>
+			<li>Created PowerShell scripts to assist with automating reports to find unpatched servers and mass update stored scheduled task credentials for service accounts</li>
+		</ul>
+
+		<h3>System Administrator<span style="font-weight: normal;"> | February 2012-February 2017</span></h3>
+		<h4><i>CDS Logistics</i> - Middle River, MD</h4>
+		<ul>
+			<li>Plan, test, schedule migration from SQL Server 2005 to SQL Server 2012</li>
+			<li>Migrated Web Server to Windows Server 2012 R2 / IIS 8.5</li>
+			<li>Assisted with migration to VoIP Phone System, train end-users, created script to deploy desktop application</li>
+			<li>Moved into supervisor role to compliment company and IT Support team growth</li>
+			<li>Interview and provide recommendations for new hires to IT Director</li>
+			<li>Support business growth by moving fleet of mobile devices from legacy Windows Mobile to Ruggedized Android devices</li>
+			<li>Worked with developers to plan and design Android based barcode scanning app</li>
+			<li>Worked with VAR and Device Mfg. to plan and implement existing Mobile Device Management (MDM) solution to provision and remotely support devices</li>
+			<li>Coordinated rollout of 450+ mobile scanner devices with IT Helpdesk staff</li>
+		  </ul>
+		  
+
+		<h3>Network Support Specialist<span style="font-weight: normal;"> | October 2007-February 2012</span></h3>
+		<h4><i>CDS Logistics</i> - Middle River, MD</h4>
+		<ul>
+			<li>Provide support to over 500+ end users for custom barcoding solution</li>
+			<li>Manage and track $750K worth of barcode scanning assets</li>
+			<li>Create technical documentation, train on software/hardware via webinar and in-person for new/high profile locations</li>
+			<li>Work with developers and customers on feature requests and bug fixes</li>
+			<li>Implement/Customize MDM solution to allow remote software deployment and support for cellular enabled mobile computers</li>
+			<li>Provide end user support for MS Office, Dynamics Great Plains, Logistics Management tools and custom apps/websites</li>
+			<li>Troubleshoot connectivity and printer issues for Windows Desktop users</li>
+			<li>Assist Network Admin in creating/deploying GPO policies to enhance domain security</li>
+			<li>Basic maintenance for internal websites/FTP on Windows Server/IIS</li>
+			<li>Manage/Support document management solution on CentOS Linux Server</li>
+			<li>Learned MS SQL syntax to create and run custom reports for IT staff and internal users</li>
+			<li>Work with DBA to enable SQL Server log shipping to disaster recovery site, continually test/document to ensure data is not corrupt</li>
+		  </ul>
+		  
+	</div>
+
+	<div class = "content" id="certs">
+		<h2>Certifications</h2>
+		<img src = "img/comptia-security-ce-certification.png">
+	</div>
+	<div class="content"  id="skills">
+		<h2>Technical Skills</h2>
+
+			<ul class="talent">
+				<li>Kubernetes</li>
+				<li>Cloud Run</li>
+				<li>Cloud SQL</li>
+			</ul>
+
+			<ul class="talent">
+				<li>Artifactory</li>
+				<li>Cloud CDN</li>
+				<li>Helm</li>
+			</ul>
+
+			<ul class="talent">
+				<li>Bash</li>
+				<li>Docker</li>
+				<li>Enterprise Cloud Migrations</li>
+			</ul>
+
+			<ul class="talent">
+				<li>Python</li>
+				<li>Terraform</li>
+				<li class="last">S3/SES</li>
+			</ul>
+
+			<ul class="talent">
+				<li>Lambda/DynamoDB</li>
+				<li>Cloudfront/Route 53</li>
+				<li class="last">CloudFormation/SAM</li>
+			</ul>
+
+			<ul class="talent">
+				<li>Google Cloud</li>
+				<li>Linux</li>
+				<li class="last">Residential/Industrial Plumbing</li>
+			</ul>
+	</div>
+	
+	<div class="content">
+		<h2 id="edu">Education</h2>			
+		<h3>B.A. in Studio Art</h3>
+		<h4><i>Michigan State University</i></h4>
+	</div>
+	
+</body>
+</html>
